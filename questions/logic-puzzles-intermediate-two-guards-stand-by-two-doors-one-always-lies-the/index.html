@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Two guards stand by two doors. One always lies, the other always tells the truth. One door is safe. You may ask one guard one question. What do you ask? A inte…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Two guards stand by two doors. One always lies, the other always tells the truth. One door is safe. You may ask one gua…" />
+    <meta property="og:description" content="Two guards stand by two doors. One always lies, the other always tells the truth. One door is safe. You may ask one guard one question. What do you ask? A inte…" />
+    <meta property="og:url" content="/questions/logic-puzzles-intermediate-two-guards-stand-by-two-doors-one-always-lies-the/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Two guards stand by two doors. One always lies, the other always tells the truth. One door is safe. You may ask one gua…" />
+    <meta name="twitter:description" content="Two guards stand by two doors. One always lies, the other always tells the truth. One door is safe. You may ask one guard one question. What do you ask? A inte…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Two guards stand by two doors. One always lies, the other always tells the truth. One door is safe. You may ask one guard one question. What do you ask?","text":"Two guards stand by two doors. One always lies, the other always tells the truth. One door is safe. You may ask one guard one question. What do you ask?","keywords":["Logic Puzzles","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Ask either guard: “Would the other guard say your door is safe?” Then choose the opposite door. The lie and the truth cancel out, so both guards point to the unsafe door."}}</script>
+    <title>Two guards stand by two doors. One always lies, the other always tells the truth. One door is safe. You may ask one gua…</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

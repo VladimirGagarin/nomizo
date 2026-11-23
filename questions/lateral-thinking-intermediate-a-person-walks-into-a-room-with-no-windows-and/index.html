@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="A person walks into a room with no windows and finds a puddle of water. No rain fell. Explain it. A intermediate Lateral Thinking question from NOMIZO. Think f…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A person walks into a room with no windows and finds a puddle of water. No rain fell. Explain it. | NOMIZO" />
+    <meta property="og:description" content="A person walks into a room with no windows and finds a puddle of water. No rain fell. Explain it. A intermediate Lateral Thinking question from NOMIZO. Think f…" />
+    <meta property="og:url" content="/questions/lateral-thinking-intermediate-a-person-walks-into-a-room-with-no-windows-and/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A person walks into a room with no windows and finds a puddle of water. No rain fell. Explain it. | NOMIZO" />
+    <meta name="twitter:description" content="A person walks into a room with no windows and finds a puddle of water. No rain fell. Explain it. A intermediate Lateral Thinking question from NOMIZO. Think f…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"A person walks into a room with no windows and finds a puddle of water. No rain fell. Explain it.","text":"A person walks into a room with no windows and finds a puddle of water. No rain fell. Explain it.","keywords":["Lateral Thinking","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Something made of ice melted in the room — for example an ice sculpture or a block of ice brought in earlier."}}</script>
+    <title>A person walks into a room with no windows and finds a puddle of water. No rain fell. Explain it. | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

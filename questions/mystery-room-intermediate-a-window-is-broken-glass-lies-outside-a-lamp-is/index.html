@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="A window is broken, glass lies outside, a lamp is warm and there are no footprints in fresh snow. What likely happened? A intermediate Mystery Room question fr…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A window is broken, glass lies outside, a lamp is warm and there are no footprints in fresh snow. What likely happened?…" />
+    <meta property="og:description" content="A window is broken, glass lies outside, a lamp is warm and there are no footprints in fresh snow. What likely happened? A intermediate Mystery Room question fr…" />
+    <meta property="og:url" content="/questions/mystery-room-intermediate-a-window-is-broken-glass-lies-outside-a-lamp-is/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A window is broken, glass lies outside, a lamp is warm and there are no footprints in fresh snow. What likely happened?…" />
+    <meta name="twitter:description" content="A window is broken, glass lies outside, a lamp is warm and there are no footprints in fresh snow. What likely happened? A intermediate Mystery Room question fr…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"A window is broken, glass lies outside, a lamp is warm and there are no footprints in fresh snow. What likely happened?","text":"A window is broken, glass lies outside, a lamp is warm and there are no footprints in fresh snow. What likely happened?","keywords":["Mystery Room","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"The glass outside suggests the window was broken from inside. The warm lamp was on recently. The unmarked snow suggests the snow fell after the break, covering any tracks."}}</script>
+    <title>A window is broken, glass lies outside, a lamp is warm and there are no footprints in fresh snow. What likely happened?…</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

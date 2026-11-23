@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="If life is temporary, what makes it meaningful? A advanced Lateral Thinking question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="If life is temporary, what makes it meaningful? | NOMIZO" />
+    <meta property="og:description" content="If life is temporary, what makes it meaningful? A advanced Lateral Thinking question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/lateral-thinking-advanced-if-life-is-temporary-what-makes-it-meaningful/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="If life is temporary, what makes it meaningful? | NOMIZO" />
+    <meta name="twitter:description" content="If life is temporary, what makes it meaningful? A advanced Lateral Thinking question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"If life is temporary, what makes it meaningful?","text":"If life is temporary, what makes it meaningful?","keywords":["Lateral Thinking","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Temporariness can sharpen meaning rather than erase it. Relationships, creation, understanding and contribution matter because they are finite and shared."}}</script>
+    <title>If life is temporary, what makes it meaningful? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

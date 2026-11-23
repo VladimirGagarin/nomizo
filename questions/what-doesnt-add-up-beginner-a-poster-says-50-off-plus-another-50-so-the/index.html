@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="A poster says 50% off, plus another 50%, so the jacket is free. Where does the arithmetic slip? A beginner What Doesn’t Add Up? question from NOMIZO. Think fir…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A poster says 50% off, plus another 50%, so the jacket is free. Where does the arithmetic slip? | NOMIZO" />
+    <meta property="og:description" content="A poster says 50% off, plus another 50%, so the jacket is free. Where does the arithmetic slip? A beginner What Doesn’t Add Up? question from NOMIZO. Think fir…" />
+    <meta property="og:url" content="/questions/what-doesnt-add-up-beginner-a-poster-says-50-off-plus-another-50-so-the/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A poster says 50% off, plus another 50%, so the jacket is free. Where does the arithmetic slip? | NOMIZO" />
+    <meta name="twitter:description" content="A poster says 50% off, plus another 50%, so the jacket is free. Where does the arithmetic slip? A beginner What Doesn’t Add Up? question from NOMIZO. Think fir…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"A poster says 50% off, plus another 50%, so the jacket is free. Where does the arithmetic slip?","text":"A poster says 50% off, plus another 50%, so the jacket is free. Where does the arithmetic slip?","keywords":["What Doesn’t Add Up?","Beginner","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"The second 50% applies to the reduced price, not the original. You pay 25% of the original, so the total saving is 75%, not 100%."}}</script>
+    <title>A poster says 50% off, plus another 50%, so the jacket is free. Where does the arithmetic slip? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

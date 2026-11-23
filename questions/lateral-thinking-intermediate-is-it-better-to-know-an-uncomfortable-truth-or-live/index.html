@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Is it better to know an uncomfortable truth or live comfortably with a lie? A intermediate Lateral Thinking question from NOMIZO. Think first, then reveal the…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Is it better to know an uncomfortable truth or live comfortably with a lie? | NOMIZO" />
+    <meta property="og:description" content="Is it better to know an uncomfortable truth or live comfortably with a lie? A intermediate Lateral Thinking question from NOMIZO. Think first, then reveal the…" />
+    <meta property="og:url" content="/questions/lateral-thinking-intermediate-is-it-better-to-know-an-uncomfortable-truth-or-live/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Is it better to know an uncomfortable truth or live comfortably with a lie? | NOMIZO" />
+    <meta name="twitter:description" content="Is it better to know an uncomfortable truth or live comfortably with a lie? A intermediate Lateral Thinking question from NOMIZO. Think first, then reveal the…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Is it better to know an uncomfortable truth or live comfortably with a lie?","text":"Is it better to know an uncomfortable truth or live comfortably with a lie?","keywords":["Lateral Thinking","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Usually truth, because lies distort future decisions and relationships. But timing, kindness and readiness matter; truth is a responsibility, not a weapon."}}</script>
+    <title>Is it better to know an uncomfortable truth or live comfortably with a lie? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

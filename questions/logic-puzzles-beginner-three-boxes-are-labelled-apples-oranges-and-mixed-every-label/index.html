@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Three boxes are labelled apples, oranges and mixed. Every label is wrong. Which box do you open first? A beginner Logic Puzzles question from NOMIZO. Think fir…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Three boxes are labelled apples, oranges and mixed. Every label is wrong. Which box do you open first? | NOMIZO" />
+    <meta property="og:description" content="Three boxes are labelled apples, oranges and mixed. Every label is wrong. Which box do you open first? A beginner Logic Puzzles question from NOMIZO. Think fir…" />
+    <meta property="og:url" content="/questions/logic-puzzles-beginner-three-boxes-are-labelled-apples-oranges-and-mixed-every-label/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Three boxes are labelled apples, oranges and mixed. Every label is wrong. Which box do you open first? | NOMIZO" />
+    <meta name="twitter:description" content="Three boxes are labelled apples, oranges and mixed. Every label is wrong. Which box do you open first? A beginner Logic Puzzles question from NOMIZO. Think fir…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Three boxes are labelled apples, oranges and mixed. Every label is wrong. Which box do you open first?","text":"Three boxes are labelled apples, oranges and mixed. Every label is wrong. Which box do you open first?","keywords":["Logic Puzzles","Beginner","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Open the box labelled “mixed”. Since every label is wrong, it must contain only apples or only oranges. The fruit you pull out identifies that box, and the other two labels follow by elimination."}}</script>
+    <title>Three boxes are labelled apples, oranges and mixed. Every label is wrong. Which box do you open first? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

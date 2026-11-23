@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Should you trust information simply because an expert said it? A intermediate Spot the Flaw question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Should you trust information simply because an expert said it? | NOMIZO" />
+    <meta property="og:description" content="Should you trust information simply because an expert said it? A intermediate Spot the Flaw question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/spot-the-flaw-intermediate-should-you-trust-information-simply-because-an-expert-said-it/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Should you trust information simply because an expert said it? | NOMIZO" />
+    <meta name="twitter:description" content="Should you trust information simply because an expert said it? A intermediate Spot the Flaw question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Should you trust information simply because an expert said it?","text":"Should you trust information simply because an expert said it?","keywords":["Spot the Flaw","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Expertise is good evidence, not a trump card. Check whether the claim is inside their field, whether other experts agree, and whether they show their reasoning."}}</script>
+    <title>Should you trust information simply because an expert said it? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

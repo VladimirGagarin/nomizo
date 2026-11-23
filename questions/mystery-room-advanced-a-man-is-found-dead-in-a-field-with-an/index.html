@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="A man is found dead in a field with an unopened package. There are no footprints leading to the body. What happened? A advanced Mystery Room question from NOMI…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A man is found dead in a field with an unopened package. There are no footprints leading to the body. What happened? |…" />
+    <meta property="og:description" content="A man is found dead in a field with an unopened package. There are no footprints leading to the body. What happened? A advanced Mystery Room question from NOMI…" />
+    <meta property="og:url" content="/questions/mystery-room-advanced-a-man-is-found-dead-in-a-field-with-an/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A man is found dead in a field with an unopened package. There are no footprints leading to the body. What happened? |…" />
+    <meta name="twitter:description" content="A man is found dead in a field with an unopened package. There are no footprints leading to the body. What happened? A advanced Mystery Room question from NOMI…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"A man is found dead in a field with an unopened package. There are no footprints leading to the body. What happened?","text":"A man is found dead in a field with an unopened package. There are no footprints leading to the body. What happened?","keywords":["Mystery Room","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"The package is a parachute that failed to open. He fell from a plane, so there are no footprints leading to the body."}}</script>
+    <title>A man is found dead in a field with an unopened package. There are no footprints leading to the body. What happened? |…</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

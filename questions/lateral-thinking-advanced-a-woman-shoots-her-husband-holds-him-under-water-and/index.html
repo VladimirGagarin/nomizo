@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="A woman shoots her husband, holds him under water and hangs him, yet they dine together afterwards. How? A advanced Lateral Thinking question from NOMIZO. Thin…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A woman shoots her husband, holds him under water and hangs him, yet they dine together afterwards. How? | NOMIZO" />
+    <meta property="og:description" content="A woman shoots her husband, holds him under water and hangs him, yet they dine together afterwards. How? A advanced Lateral Thinking question from NOMIZO. Thin…" />
+    <meta property="og:url" content="/questions/lateral-thinking-advanced-a-woman-shoots-her-husband-holds-him-under-water-and/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A woman shoots her husband, holds him under water and hangs him, yet they dine together afterwards. How? | NOMIZO" />
+    <meta name="twitter:description" content="A woman shoots her husband, holds him under water and hangs him, yet they dine together afterwards. How? A advanced Lateral Thinking question from NOMIZO. Thin…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"A woman shoots her husband, holds him under water and hangs him, yet they dine together afterwards. How?","text":"A woman shoots her husband, holds him under water and hangs him, yet they dine together afterwards. How?","keywords":["Lateral Thinking","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"She is a photographer. She shoots his picture, develops it in liquid and hangs it to dry. Then they dine together."}}</script>
+    <title>A woman shoots her husband, holds him under water and hangs him, yet they dine together afterwards. How? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

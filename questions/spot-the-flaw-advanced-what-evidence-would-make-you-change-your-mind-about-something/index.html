@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="What evidence would make you change your mind about something you strongly believe? A advanced Spot the Flaw question from NOMIZO. Think first, then reveal the…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="What evidence would make you change your mind about something you strongly believe? | NOMIZO" />
+    <meta property="og:description" content="What evidence would make you change your mind about something you strongly believe? A advanced Spot the Flaw question from NOMIZO. Think first, then reveal the…" />
+    <meta property="og:url" content="/questions/spot-the-flaw-advanced-what-evidence-would-make-you-change-your-mind-about-something/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="What evidence would make you change your mind about something you strongly believe? | NOMIZO" />
+    <meta name="twitter:description" content="What evidence would make you change your mind about something you strongly believe? A advanced Spot the Flaw question from NOMIZO. Think first, then reveal the…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"What evidence would make you change your mind about something you strongly believe?","text":"What evidence would make you change your mind about something you strongly believe?","keywords":["Spot the Flaw","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Evidence that is independent, reproducible, and stronger than the reasons you currently hold. If you cannot name any such evidence, the belief may be unfalsifiable."}}</script>
+    <title>What evidence would make you change your mind about something you strongly believe? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

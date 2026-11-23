@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="How do you know when you are being manipulated? A advanced Spot the Flaw question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How do you know when you are being manipulated? | NOMIZO" />
+    <meta property="og:description" content="How do you know when you are being manipulated? A advanced Spot the Flaw question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/spot-the-flaw-advanced-how-do-you-know-when-you-are-being-manipulated/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How do you know when you are being manipulated? | NOMIZO" />
+    <meta name="twitter:description" content="How do you know when you are being manipulated? A advanced Spot the Flaw question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"How do you know when you are being manipulated?","text":"How do you know when you are being manipulated?","keywords":["Spot the Flaw","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Watch for urgency, flattery, fear, false dilemmas and pressure to skip verification. Manipulation tries to make you decide before you can think."}}</script>
+    <title>How do you know when you are being manipulated? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

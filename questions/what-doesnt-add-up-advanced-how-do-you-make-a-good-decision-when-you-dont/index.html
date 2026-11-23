@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="How do you make a good decision when you don’t have all the information? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the rea…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How do you make a good decision when you don’t have all the information? | NOMIZO" />
+    <meta property="og:description" content="How do you make a good decision when you don’t have all the information? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the rea…" />
+    <meta property="og:url" content="/questions/what-doesnt-add-up-advanced-how-do-you-make-a-good-decision-when-you-dont/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How do you make a good decision when you don’t have all the information? | NOMIZO" />
+    <meta name="twitter:description" content="How do you make a good decision when you don’t have all the information? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the rea…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"How do you make a good decision when you don’t have all the information?","text":"How do you make a good decision when you don’t have all the information?","keywords":["What Doesn’t Add Up?","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Decide under uncertainty: identify what you know, what you assume, what would change your mind, and what reversibility costs. Prefer options that keep learning possible."}}</script>
+    <title>How do you make a good decision when you don’t have all the information? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

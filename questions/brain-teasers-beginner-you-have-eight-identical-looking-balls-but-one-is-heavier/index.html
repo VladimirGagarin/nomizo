@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="You have eight identical-looking balls, but one is heavier. How can you find it using a balance scale only twice? A beginner Brain Teasers question from NOMIZO…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="You have eight identical-looking balls, but one is heavier. How can you find it using a balance scale only twice? | NOM…" />
+    <meta property="og:description" content="You have eight identical-looking balls, but one is heavier. How can you find it using a balance scale only twice? A beginner Brain Teasers question from NOMIZO…" />
+    <meta property="og:url" content="/questions/brain-teasers-beginner-you-have-eight-identical-looking-balls-but-one-is-heavier/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="You have eight identical-looking balls, but one is heavier. How can you find it using a balance scale only twice? | NOM…" />
+    <meta name="twitter:description" content="You have eight identical-looking balls, but one is heavier. How can you find it using a balance scale only twice? A beginner Brain Teasers question from NOMIZO…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"You have eight identical-looking balls, but one is heavier. How can you find it using a balance scale only twice?","text":"You have eight identical-looking balls, but one is heavier. How can you find it using a balance scale only twice?","keywords":["Brain Teasers","Beginner","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Weigh three against three. If they balance, weigh the remaining two. If one side is heavier, take those three and weigh one against one; the heavier side, or a balance, identifies the ball."}}</script>
+    <title>You have eight identical-looking balls, but one is heavier. How can you find it using a balance scale only twice? | NOM…</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

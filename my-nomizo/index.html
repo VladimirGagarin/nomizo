@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta
+      name="description"
+      content="Keep the questions that stay with you, revisit your reasoning and notice how your judgement changes over time with My NOMIZO."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="My NOMIZO — Track Your Thinking | NOMIZO" />
+    <meta
+      property="og:description"
+      content="Save questions, revisit your reasoning and notice how your judgement changes over time."
+    />
+    <meta property="og:url" content="/my-nomizo/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="My NOMIZO — NOMIZO" />
+    <meta name="twitter:description" content="Make your thinking visible over time." />
+    <title>My NOMIZO — Track Your Thinking | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

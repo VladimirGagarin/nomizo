@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="If something has happened every day for a year, is it guaranteed to happen tomorrow? A advanced Logic Puzzles question from NOMIZO. Think first, then reveal th…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="If something has happened every day for a year, is it guaranteed to happen tomorrow? | NOMIZO" />
+    <meta property="og:description" content="If something has happened every day for a year, is it guaranteed to happen tomorrow? A advanced Logic Puzzles question from NOMIZO. Think first, then reveal th…" />
+    <meta property="og:url" content="/questions/logic-puzzles-advanced-if-something-has-happened-every-day-for-a-year-is/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="If something has happened every day for a year, is it guaranteed to happen tomorrow? | NOMIZO" />
+    <meta name="twitter:description" content="If something has happened every day for a year, is it guaranteed to happen tomorrow? A advanced Logic Puzzles question from NOMIZO. Think first, then reveal th…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"If something has happened every day for a year, is it guaranteed to happen tomorrow?","text":"If something has happened every day for a year, is it guaranteed to happen tomorrow?","keywords":["Logic Puzzles","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"No. Past regularity supports expectation, not certainty. Induction gives probability, not logical guarantee."}}</script>
+    <title>If something has happened every day for a year, is it guaranteed to happen tomorrow? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

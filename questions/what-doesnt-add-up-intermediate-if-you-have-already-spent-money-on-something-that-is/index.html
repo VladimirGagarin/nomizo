@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="If you have already spent money on something that is failing, should you continue investing in it? A intermediate What Doesn’t Add Up? question from NOMIZO. Th…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="If you have already spent money on something that is failing, should you continue investing in it? | NOMIZO" />
+    <meta property="og:description" content="If you have already spent money on something that is failing, should you continue investing in it? A intermediate What Doesn’t Add Up? question from NOMIZO. Th…" />
+    <meta property="og:url" content="/questions/what-doesnt-add-up-intermediate-if-you-have-already-spent-money-on-something-that-is/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="If you have already spent money on something that is failing, should you continue investing in it? | NOMIZO" />
+    <meta name="twitter:description" content="If you have already spent money on something that is failing, should you continue investing in it? A intermediate What Doesn’t Add Up? question from NOMIZO. Th…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"If you have already spent money on something that is failing, should you continue investing in it?","text":"If you have already spent money on something that is failing, should you continue investing in it?","keywords":["What Doesn’t Add Up?","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Usually no. Past spending is sunk; the decision should compare future costs and future benefits only. Continuing to “save” the past often wastes the future."}}</script>
+    <title>If you have already spent money on something that is failing, should you continue investing in it? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

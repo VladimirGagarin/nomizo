@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta
+      name="description"
+      content="Practise decisions in realistic everyday situations. Notice assumptions, weigh consequences and make clearer judgements."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Real Life — Practise Everyday Decisions | NOMIZO" />
+    <meta
+      property="og:description"
+      content="Judgement improves when the situation feels familiar. Practise clear thinking in ordinary moments."
+    />
+    <meta property="og:url" content="/real-life/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Real Life — NOMIZO" />
+    <meta name="twitter:description" content="Practise where it counts. Everyday scenarios for clearer judgement." />
+    <title>Real Life — Practise Everyday Decisions | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

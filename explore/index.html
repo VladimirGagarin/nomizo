@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta
+      name="description"
+      content="Discover interesting questions, ideas and thinking concepts. Follow a curiosity and see how better questions lead to clearer understanding."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Explore — Questions and Thinking Concepts | NOMIZO" />
+    <meta
+      property="og:description"
+      content="Follow a question through puzzles, courses, real-life scenarios and philosophy."
+    />
+    <meta property="og:url" content="/explore/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Explore — NOMIZO" />
+    <meta name="twitter:description" content="Follow a question. Discover five ways into clearer thinking." />
+    <title>Explore — Questions and Thinking Concepts | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

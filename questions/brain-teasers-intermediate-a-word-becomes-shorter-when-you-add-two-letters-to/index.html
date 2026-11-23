@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="A word becomes shorter when you add two letters to it. What is the word? A intermediate Brain Teasers question from NOMIZO. Think first, then reveal the reason…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A word becomes shorter when you add two letters to it. What is the word? | NOMIZO" />
+    <meta property="og:description" content="A word becomes shorter when you add two letters to it. What is the word? A intermediate Brain Teasers question from NOMIZO. Think first, then reveal the reason…" />
+    <meta property="og:url" content="/questions/brain-teasers-intermediate-a-word-becomes-shorter-when-you-add-two-letters-to/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A word becomes shorter when you add two letters to it. What is the word? | NOMIZO" />
+    <meta name="twitter:description" content="A word becomes shorter when you add two letters to it. What is the word? A intermediate Brain Teasers question from NOMIZO. Think first, then reveal the reason…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"A word becomes shorter when you add two letters to it. What is the word?","text":"A word becomes shorter when you add two letters to it. What is the word?","keywords":["Brain Teasers","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"The word “short”. Add “er” and it becomes “shorter”."}}</script>
+    <title>A word becomes shorter when you add two letters to it. What is the word? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

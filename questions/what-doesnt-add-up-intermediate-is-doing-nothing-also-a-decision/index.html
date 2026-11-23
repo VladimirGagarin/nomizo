@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Is doing nothing also a decision? A intermediate What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Is doing nothing also a decision? | NOMIZO" />
+    <meta property="og:description" content="Is doing nothing also a decision? A intermediate What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/what-doesnt-add-up-intermediate-is-doing-nothing-also-a-decision/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Is doing nothing also a decision? | NOMIZO" />
+    <meta name="twitter:description" content="Is doing nothing also a decision? A intermediate What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Is doing nothing also a decision?","text":"Is doing nothing also a decision?","keywords":["What Doesn’t Add Up?","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Yes. Inaction has consequences and opportunity costs. Choosing not to choose is still a choice with outcomes."}}</script>
+    <title>Is doing nothing also a decision? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

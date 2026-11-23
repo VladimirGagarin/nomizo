@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Either we ban cars or the city becomes unlivable. We will not ban cars, so the city will become unlivable. What is the flaw? A advanced Spot the Flaw question…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Either we ban cars or the city becomes unlivable. We will not ban cars, so the city will become unlivable. What is the…" />
+    <meta property="og:description" content="Either we ban cars or the city becomes unlivable. We will not ban cars, so the city will become unlivable. What is the flaw? A advanced Spot the Flaw question…" />
+    <meta property="og:url" content="/questions/spot-the-flaw-advanced-either-we-ban-cars-or-the-city-becomes-unlivable-we/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Either we ban cars or the city becomes unlivable. We will not ban cars, so the city will become unlivable. What is the…" />
+    <meta name="twitter:description" content="Either we ban cars or the city becomes unlivable. We will not ban cars, so the city will become unlivable. What is the flaw? A advanced Spot the Flaw question…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Either we ban cars or the city becomes unlivable. We will not ban cars, so the city will become unlivable. What is the flaw?","text":"Either we ban cars or the city becomes unlivable. We will not ban cars, so the city will become unlivable. What is the flaw?","keywords":["Spot the Flaw","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"The argument is valid in form but rests on a false dilemma. There may be other ways to keep the city livable besides banning cars."}}</script>
+    <title>Either we ban cars or the city becomes unlivable. We will not ban cars, so the city will become unlivable. What is the…</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="How can you tell the difference between a fact and an opinion? A beginner Spot the Flaw question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How can you tell the difference between a fact and an opinion? | NOMIZO" />
+    <meta property="og:description" content="How can you tell the difference between a fact and an opinion? A beginner Spot the Flaw question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/spot-the-flaw-beginner-how-can-you-tell-the-difference-between-a-fact-and/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How can you tell the difference between a fact and an opinion? | NOMIZO" />
+    <meta name="twitter:description" content="How can you tell the difference between a fact and an opinion? A beginner Spot the Flaw question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"How can you tell the difference between a fact and an opinion?","text":"How can you tell the difference between a fact and an opinion?","keywords":["Spot the Flaw","Beginner","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"A fact is a claim that can be checked against evidence and is true or false regardless of preference. An opinion expresses judgement, taste or interpretation. Check whether the claim is verifiable."}}</script>
+    <title>How can you tell the difference between a fact and an opinion? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

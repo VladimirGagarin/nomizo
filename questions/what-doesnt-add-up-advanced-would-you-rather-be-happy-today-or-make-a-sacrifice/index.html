@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Would you rather be happy today or make a sacrifice for a better tomorrow? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the r…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Would you rather be happy today or make a sacrifice for a better tomorrow? | NOMIZO" />
+    <meta property="og:description" content="Would you rather be happy today or make a sacrifice for a better tomorrow? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the r…" />
+    <meta property="og:url" content="/questions/what-doesnt-add-up-advanced-would-you-rather-be-happy-today-or-make-a-sacrifice/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Would you rather be happy today or make a sacrifice for a better tomorrow? | NOMIZO" />
+    <meta name="twitter:description" content="Would you rather be happy today or make a sacrifice for a better tomorrow? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the r…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Would you rather be happy today or make a sacrifice for a better tomorrow?","text":"Would you rather be happy today or make a sacrifice for a better tomorrow?","keywords":["What Doesn’t Add Up?","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"There is no universal answer. The question hides a trade-off between present wellbeing and future optionality. A good life usually needs both, weighted by circumstance."}}</script>
+    <title>Would you rather be happy today or make a sacrifice for a better tomorrow? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

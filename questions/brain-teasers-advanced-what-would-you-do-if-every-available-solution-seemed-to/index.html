@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="What would you do if every available solution seemed to make things worse? A advanced Brain Teasers question from NOMIZO. Think first, then reveal the reasonin…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="What would you do if every available solution seemed to make things worse? | NOMIZO" />
+    <meta property="og:description" content="What would you do if every available solution seemed to make things worse? A advanced Brain Teasers question from NOMIZO. Think first, then reveal the reasonin…" />
+    <meta property="og:url" content="/questions/brain-teasers-advanced-what-would-you-do-if-every-available-solution-seemed-to/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="What would you do if every available solution seemed to make things worse? | NOMIZO" />
+    <meta name="twitter:description" content="What would you do if every available solution seemed to make things worse? A advanced Brain Teasers question from NOMIZO. Think first, then reveal the reasonin…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"What would you do if every available solution seemed to make things worse?","text":"What would you do if every available solution seemed to make things worse?","keywords":["Brain Teasers","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Re-examine the framing. If all options fail, the problem may be misdefined, the constraints may be false, or gathering more information may be the least bad move."}}</script>
+    <title>What would you do if every available solution seemed to make things worse? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

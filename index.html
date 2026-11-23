@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta
+      name="description"
+      content="NOMIZO makes clear thinking accessible through everyday questions, reasoning challenges, practical courses and philosophy. Try to Think Better."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NOMIZO — Try to Think Better." />
+    <meta
+      property="og:description"
+      content="NOMIZO makes clear thinking accessible through everyday questions, reasoning challenges, practical courses and philosophy."
+    />
+    <meta property="og:url" content="/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NOMIZO — Try to Think Better." />
+    <meta
+      name="twitter:description"
+      content="Question. Reason. Understand. Practical thinking for everyday life."
+    />
+    <title>NOMIZO — Try to Think Better.</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

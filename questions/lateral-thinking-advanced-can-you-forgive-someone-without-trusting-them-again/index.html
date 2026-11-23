@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Can you forgive someone without trusting them again? A advanced Lateral Thinking question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Can you forgive someone without trusting them again? | NOMIZO" />
+    <meta property="og:description" content="Can you forgive someone without trusting them again? A advanced Lateral Thinking question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/lateral-thinking-advanced-can-you-forgive-someone-without-trusting-them-again/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Can you forgive someone without trusting them again? | NOMIZO" />
+    <meta name="twitter:description" content="Can you forgive someone without trusting them again? A advanced Lateral Thinking question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Can you forgive someone without trusting them again?","text":"Can you forgive someone without trusting them again?","keywords":["Lateral Thinking","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Yes. Forgiveness releases resentment; trust is a prediction about future behaviour. They are separate decisions and can move independently."}}</script>
+    <title>Can you forgive someone without trusting them again? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

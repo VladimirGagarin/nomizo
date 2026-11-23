@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="When should you walk away from an opportunity? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="When should you walk away from an opportunity? | NOMIZO" />
+    <meta property="og:description" content="When should you walk away from an opportunity? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/what-doesnt-add-up-advanced-when-should-you-walk-away-from-an-opportunity/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="When should you walk away from an opportunity? | NOMIZO" />
+    <meta name="twitter:description" content="When should you walk away from an opportunity? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"When should you walk away from an opportunity?","text":"When should you walk away from an opportunity?","keywords":["What Doesn’t Add Up?","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"When expected costs exceed expected benefits, when it violates your constraints or values, or when continuing is driven by sunk cost rather than future value."}}</script>
+    <title>When should you walk away from an opportunity? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

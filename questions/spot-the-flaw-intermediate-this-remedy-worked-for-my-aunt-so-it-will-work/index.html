@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="This remedy worked for my aunt, so it will work for everyone. What is missing? A intermediate Spot the Flaw question from NOMIZO. Think first, then reveal the…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="This remedy worked for my aunt, so it will work for everyone. What is missing? | NOMIZO" />
+    <meta property="og:description" content="This remedy worked for my aunt, so it will work for everyone. What is missing? A intermediate Spot the Flaw question from NOMIZO. Think first, then reveal the…" />
+    <meta property="og:url" content="/questions/spot-the-flaw-intermediate-this-remedy-worked-for-my-aunt-so-it-will-work/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="This remedy worked for my aunt, so it will work for everyone. What is missing? | NOMIZO" />
+    <meta name="twitter:description" content="This remedy worked for my aunt, so it will work for everyone. What is missing? A intermediate Spot the Flaw question from NOMIZO. Think first, then reveal the…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"This remedy worked for my aunt, so it will work for everyone. What is missing?","text":"This remedy worked for my aunt, so it will work for everyone. What is missing?","keywords":["Spot the Flaw","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"A single case is not a representative sample. Anecdotes can suggest a hypothesis, but they cannot establish a general rule."}}</script>
+    <title>This remedy worked for my aunt, so it will work for everyone. What is missing? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

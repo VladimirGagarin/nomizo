@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Are you really choosing freely, or are your choices being shaped by your environment? A advanced Mystery Room question from NOMIZO. Think first, then reveal th…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Are you really choosing freely, or are your choices being shaped by your environment? | NOMIZO" />
+    <meta property="og:description" content="Are you really choosing freely, or are your choices being shaped by your environment? A advanced Mystery Room question from NOMIZO. Think first, then reveal th…" />
+    <meta property="og:url" content="/questions/mystery-room-advanced-are-you-really-choosing-freely-or-are-your-choices-being/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Are you really choosing freely, or are your choices being shaped by your environment? | NOMIZO" />
+    <meta name="twitter:description" content="Are you really choosing freely, or are your choices being shaped by your environment? A advanced Mystery Room question from NOMIZO. Think first, then reveal th…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Are you really choosing freely, or are your choices being shaped by your environment?","text":"Are you really choosing freely, or are your choices being shaped by your environment?","keywords":["Mystery Room","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Both. Choices are real, but the menu, defaults, incentives and culture shape what feels available. Freedom includes noticing the shaping."}}</script>
+    <title>Are you really choosing freely, or are your choices being shaped by your environment? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

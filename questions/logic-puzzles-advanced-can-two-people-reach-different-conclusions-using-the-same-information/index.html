@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Can two people reach different conclusions using the same information? A advanced Logic Puzzles question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Can two people reach different conclusions using the same information? | NOMIZO" />
+    <meta property="og:description" content="Can two people reach different conclusions using the same information? A advanced Logic Puzzles question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/logic-puzzles-advanced-can-two-people-reach-different-conclusions-using-the-same-information/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Can two people reach different conclusions using the same information? | NOMIZO" />
+    <meta name="twitter:description" content="Can two people reach different conclusions using the same information? A advanced Logic Puzzles question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Can two people reach different conclusions using the same information?","text":"Can two people reach different conclusions using the same information?","keywords":["Logic Puzzles","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Yes. They may weigh values differently, use different assumptions, or reason from different background beliefs. Same data does not force identical interpretation."}}</script>
+    <title>Can two people reach different conclusions using the same information? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

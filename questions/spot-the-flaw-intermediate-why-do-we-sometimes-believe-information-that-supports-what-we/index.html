@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Why do we sometimes believe information that supports what we already think? A intermediate Spot the Flaw question from NOMIZO. Think first, then reveal the re…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Why do we sometimes believe information that supports what we already think? | NOMIZO" />
+    <meta property="og:description" content="Why do we sometimes believe information that supports what we already think? A intermediate Spot the Flaw question from NOMIZO. Think first, then reveal the re…" />
+    <meta property="og:url" content="/questions/spot-the-flaw-intermediate-why-do-we-sometimes-believe-information-that-supports-what-we/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Why do we sometimes believe information that supports what we already think? | NOMIZO" />
+    <meta name="twitter:description" content="Why do we sometimes believe information that supports what we already think? A intermediate Spot the Flaw question from NOMIZO. Think first, then reveal the re…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Why do we sometimes believe information that supports what we already think?","text":"Why do we sometimes believe information that supports what we already think?","keywords":["Spot the Flaw","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Confirmation bias makes agreeing information feel fluent and right, while disagreeing information triggers scrutiny. Belief protects itself by selective attention."}}</script>
+    <title>Why do we sometimes believe information that supports what we already think? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

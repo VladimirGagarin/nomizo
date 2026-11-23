@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="If a person tells the truth once, does that mean everything they say is true? A intermediate Logic Puzzles question from NOMIZO. Think first, then reveal the r…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="If a person tells the truth once, does that mean everything they say is true? | NOMIZO" />
+    <meta property="og:description" content="If a person tells the truth once, does that mean everything they say is true? A intermediate Logic Puzzles question from NOMIZO. Think first, then reveal the r…" />
+    <meta property="og:url" content="/questions/logic-puzzles-intermediate-if-a-person-tells-the-truth-once-does-that-mean/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="If a person tells the truth once, does that mean everything they say is true? | NOMIZO" />
+    <meta name="twitter:description" content="If a person tells the truth once, does that mean everything they say is true? A intermediate Logic Puzzles question from NOMIZO. Think first, then reveal the r…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"If a person tells the truth once, does that mean everything they say is true?","text":"If a person tells the truth once, does that mean everything they say is true?","keywords":["Logic Puzzles","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"No. One true statement is evidence about that statement, not a guarantee about every future claim. Trust should track the record, not a single moment."}}</script>
+    <title>If a person tells the truth once, does that mean everything they say is true? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

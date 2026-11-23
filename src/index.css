@@ -1,0 +1,155 @@
+:root {
+  --ink: #12140f;
+  --ink-deep: #0b0c09;
+  --ink-soft: #1b1d17;
+  --ivory: #f4f0e6;
+  --ivory-deep: #e9e3d5;
+  --paper: #faf7f0;
+  --gold: #c7a35c;
+  --gold-bright: #e0c285;
+  --gold-dark: #9a7736;
+  --gold-soft: rgba(199, 163, 92, 0.16);
+  --gold-subtle: var(--gold-bright);
+  --gold-subtle-hover: var(--gold);
+  --logic: #173a5e;
+  --logic-accent: #6aa3cf;
+  --logic-soft: rgba(106, 163, 207, 0.14);
+  --logic-strong: var(--logic-accent);
+  --logic-strong-text: var(--ink-deep);
+  --logic-strong-soft: rgba(11, 12, 9, 0.12);
+  --logic-border: rgba(106, 163, 207, 0.35);
+  --line-dark: rgba(244, 240, 230, 0.14);
+  --line-light: rgba(244, 240, 230, 0.12);
+  --muted-dark: rgba(244, 240, 230, 0.62);
+  --muted-light: rgba(244, 240, 230, 0.62);
+  --card-overlay: rgba(244, 240, 230, 0.035);
+  --chip-count-bg: rgba(244, 240, 230, 0.08);
+  --correct: #93aa7d;
+  --wrong: #c07c6a;
+  --badge-beginner: #93aa7d;
+  --badge-intermediate: #6aa3cf;
+  --badge-advanced: #c07c6a;
+
+  --page-bg: #0b0c09;
+  --surface-dark: var(--ink);
+  --surface-dark-text: var(--ivory);
+  --surface-light: #161812;
+  --surface-light-text: var(--ivory);
+  --surface-paper: var(--ink-deep);
+  --surface-paper-text: var(--ivory);
+  --surface-card: var(--ink-soft);
+  --surface-card-text: var(--ivory);
+  --header-bg: rgba(11, 12, 9, 0.9);
+  --header-text: var(--ivory);
+  --header-muted: rgba(244, 240, 230, 0.62);
+  --header-border: rgba(244, 240, 230, 0.14);
+  --footer-bg: var(--ink-deep);
+  --footer-text: var(--muted-dark);
+
+  --serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Palatino,
+    Georgia, serif;
+  --sans: 'Avenir Next', Avenir, 'Segoe UI', system-ui, sans-serif;
+
+  color-scheme: dark;
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[data-theme='light'] {
+  --gold-subtle: #9a7736;
+  --gold-subtle-hover: #7c5d27;
+  --logic-accent: #173a5e;
+  --logic-soft: rgba(23, 58, 94, 0.12);
+  --logic-strong: var(--logic);
+  --logic-strong-text: var(--ivory);
+  --logic-strong-soft: rgba(244, 240, 230, 0.16);
+  --logic-border: rgba(23, 58, 94, 0.35);
+  --line-dark: rgba(244, 240, 230, 0.22);
+  --line-light: rgba(18, 20, 15, 0.14);
+  --muted-dark: rgba(244, 240, 230, 0.72);
+  --muted-light: rgba(18, 20, 15, 0.64);
+  --card-overlay: rgba(255, 255, 255, 0.5);
+  --chip-count-bg: rgba(18, 20, 15, 0.06);
+  --badge-beginner: #5d7550;
+  --badge-intermediate: #173a5e;
+  --badge-advanced: #a55e4c;
+
+  --page-bg: #faf7f0;
+  --surface-dark: var(--logic);
+  --surface-dark-text: #f4f0e6;
+  --surface-light: #fffdf8;
+  --surface-light-text: var(--ink);
+  --surface-paper: var(--ivory);
+  --surface-paper-text: var(--ink);
+  --surface-card: var(--logic);
+  --surface-card-text: #f4f0e6;
+  --header-bg: rgba(255, 253, 248, 0.92);
+  --header-text: var(--ink);
+  --header-muted: rgba(18, 20, 15, 0.64);
+  --header-border: rgba(18, 20, 15, 0.14);
+  --footer-bg: var(--logic);
+  --footer-text: rgba(244, 240, 230, 0.72);
+
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--page-bg);
+  color: var(--surface-light-text);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

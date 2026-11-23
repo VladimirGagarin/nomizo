@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Can a statement be logically correct but still lead to a false conclusion? A intermediate Logic Puzzles question from NOMIZO. Think first, then reveal the reas…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Can a statement be logically correct but still lead to a false conclusion? | NOMIZO" />
+    <meta property="og:description" content="Can a statement be logically correct but still lead to a false conclusion? A intermediate Logic Puzzles question from NOMIZO. Think first, then reveal the reas…" />
+    <meta property="og:url" content="/questions/logic-puzzles-intermediate-can-a-statement-be-logically-correct-but-still-lead-to/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Can a statement be logically correct but still lead to a false conclusion? | NOMIZO" />
+    <meta name="twitter:description" content="Can a statement be logically correct but still lead to a false conclusion? A intermediate Logic Puzzles question from NOMIZO. Think first, then reveal the reas…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Can a statement be logically correct but still lead to a false conclusion?","text":"Can a statement be logically correct but still lead to a false conclusion?","keywords":["Logic Puzzles","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Yes. Valid reasoning from false premises can produce a false conclusion. Logic checks the structure, not the truth of the starting points."}}</script>
+    <title>Can a statement be logically correct but still lead to a false conclusion? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

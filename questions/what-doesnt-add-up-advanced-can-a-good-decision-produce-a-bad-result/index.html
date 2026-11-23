@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Can a good decision produce a bad result? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Can a good decision produce a bad result? | NOMIZO" />
+    <meta property="og:description" content="Can a good decision produce a bad result? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/what-doesnt-add-up-advanced-can-a-good-decision-produce-a-bad-result/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Can a good decision produce a bad result? | NOMIZO" />
+    <meta name="twitter:description" content="Can a good decision produce a bad result? A advanced What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Can a good decision produce a bad result?","text":"Can a good decision produce a bad result?","keywords":["What Doesn’t Add Up?","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Yes. Outcomes depend on luck and hidden factors. Judge decisions by the information and reasoning available at the time, not only by the result."}}</script>
+    <title>Can a good decision produce a bad result? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="Why do we sometimes mistake confidence for intelligence? A advanced Mystery Room question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Why do we sometimes mistake confidence for intelligence? | NOMIZO" />
+    <meta property="og:description" content="Why do we sometimes mistake confidence for intelligence? A advanced Mystery Room question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/mystery-room-advanced-why-do-we-sometimes-mistake-confidence-for-intelligence/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Why do we sometimes mistake confidence for intelligence? | NOMIZO" />
+    <meta name="twitter:description" content="Why do we sometimes mistake confidence for intelligence? A advanced Mystery Room question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"Why do we sometimes mistake confidence for intelligence?","text":"Why do we sometimes mistake confidence for intelligence?","keywords":["Mystery Room","Advanced","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Confidence is easy to observe; competence is not. Fluent, certain speech feels like knowledge, so we use certainty as a shortcut for ability."}}</script>
+    <title>Why do we sometimes mistake confidence for intelligence? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

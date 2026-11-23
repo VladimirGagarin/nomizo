@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="A shop reduces a product from KSh 10,000 to KSh 7,000. Is that automatically a good deal? A intermediate Logic Puzzles question from NOMIZO. Think first, then…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A shop reduces a product from KSh 10,000 to KSh 7,000. Is that automatically a good deal? | NOMIZO" />
+    <meta property="og:description" content="A shop reduces a product from KSh 10,000 to KSh 7,000. Is that automatically a good deal? A intermediate Logic Puzzles question from NOMIZO. Think first, then…" />
+    <meta property="og:url" content="/questions/logic-puzzles-intermediate-a-shop-reduces-a-product-from-ksh-10-000-to/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A shop reduces a product from KSh 10,000 to KSh 7,000. Is that automatically a good deal? | NOMIZO" />
+    <meta name="twitter:description" content="A shop reduces a product from KSh 10,000 to KSh 7,000. Is that automatically a good deal? A intermediate Logic Puzzles question from NOMIZO. Think first, then…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"A shop reduces a product from KSh 10,000 to KSh 7,000. Is that automatically a good deal?","text":"A shop reduces a product from KSh 10,000 to KSh 7,000. Is that automatically a good deal?","keywords":["Logic Puzzles","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Not automatically. You still need the real market price, whether you need the item, and whether the “original” price was inflated. A discount is only good relative to a fair baseline."}}</script>
+    <title>A shop reduces a product from KSh 10,000 to KSh 7,000. Is that automatically a good deal? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

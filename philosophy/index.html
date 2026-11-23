@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta
+      name="description"
+      content="Explore Socratic questioning, Stoicism, empiricism and pragmatism as practical tools for examining belief, knowledge and human nature."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Philosophy — Schools of Thought for Everyday Life | NOMIZO" />
+    <meta
+      property="og:description"
+      content="Practical philosophy for everyday life: borrow the method that helps you think clearly."
+    />
+    <meta property="og:url" content="/philosophy/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Philosophy — NOMIZO" />
+    <meta name="twitter:description" content="Wisdom, made useful. Schools of thought as thinking tools." />
+    <title>Philosophy — Schools of Thought for Everyday Life | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

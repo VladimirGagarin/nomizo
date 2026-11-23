@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta
+      name="description"
+      content="Explore six playful thinking modes: logic puzzles, brain teasers, mystery room, spot the flaw, inconsistencies and lateral thinking. Choose Beginner, Intermediate or Advanced."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Think Lab — Playful Puzzles and Reasoning Challenges | NOMIZO" />
+    <meta
+      property="og:description"
+      content="Six playful thinking modes with Beginner, Intermediate and Advanced difficulty levels."
+    />
+    <meta property="og:url" content="/think-lab/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Think Lab — NOMIZO" />
+    <meta name="twitter:description" content="Six playful thinking modes. Three difficulty levels." />
+    <title>Think Lab — Playful Puzzles and Reasoning Challenges | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

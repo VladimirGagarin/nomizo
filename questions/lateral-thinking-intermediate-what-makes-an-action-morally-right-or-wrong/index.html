@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="What makes an action morally right or wrong? A intermediate Lateral Thinking question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="What makes an action morally right or wrong? | NOMIZO" />
+    <meta property="og:description" content="What makes an action morally right or wrong? A intermediate Lateral Thinking question from NOMIZO. Think first, then reveal the reasoning." />
+    <meta property="og:url" content="/questions/lateral-thinking-intermediate-what-makes-an-action-morally-right-or-wrong/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="What makes an action morally right or wrong? | NOMIZO" />
+    <meta name="twitter:description" content="What makes an action morally right or wrong? A intermediate Lateral Thinking question from NOMIZO. Think first, then reveal the reasoning." />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"What makes an action morally right or wrong?","text":"What makes an action morally right or wrong?","keywords":["Lateral Thinking","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"Major frameworks weigh consequences, duties, character or care. A practical test asks about harm, fairness, honesty and what kind of person the action makes you."}}</script>
+    <title>What makes an action morally right or wrong? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

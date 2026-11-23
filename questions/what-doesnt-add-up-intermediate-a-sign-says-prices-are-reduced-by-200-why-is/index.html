@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('nomizo-theme')
+        document.documentElement.dataset.theme = storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0c09" />
+    <meta name="description" content="A sign says prices are reduced by 200%. Why is that impossible? A intermediate What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasonin…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A sign says prices are reduced by 200%. Why is that impossible? | NOMIZO" />
+    <meta property="og:description" content="A sign says prices are reduced by 200%. Why is that impossible? A intermediate What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasonin…" />
+    <meta property="og:url" content="/questions/what-doesnt-add-up-intermediate-a-sign-says-prices-are-reduced-by-200-why-is/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A sign says prices are reduced by 200%. Why is that impossible? | NOMIZO" />
+    <meta name="twitter:description" content="A sign says prices are reduced by 200%. Why is that impossible? A intermediate What Doesn’t Add Up? question from NOMIZO. Think first, then reveal the reasonin…" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Question","name":"A sign says prices are reduced by 200%. Why is that impossible?","text":"A sign says prices are reduced by 200%. Why is that impossible?","keywords":["What Doesn’t Add Up?","Intermediate","critical thinking"],"acceptedAnswer":{"@type":"Answer","text":"A reduction cannot exceed 100% of the original price. Beyond that the shop would owe you money; the sign is either a mistake or a trick."}}</script>
+    <title>A sign says prices are reduced by 200%. Why is that impossible? | NOMIZO</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
